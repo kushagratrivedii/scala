@@ -119,7 +119,17 @@ Orginal List: List(10, 20, 30, 30, 30, 60, 50)
 (ix) last Occurence of 30: 4
 (x) Map: Map(0 -> 10, 5 -> 60, 1 -> 20, 6 -> 50, 2 -> 30, 3 -> 30, 4 -> 30)
 
+object MyObject {
+    
+    def main(args: Array[String]) {
+        val progLang = List("C++", "JavaScript" , "Scala" , "Python")
+        val map = progLang.zipWithIndex.map{ case (v,i) => (i,v) }.toMap
+        println("The values of map : "+ map)
+    }
+}
+Output:
 
+The values of map : Map(0 -> C++, 1 -> JavaScript, 2 -> Scala, 3 -> Python)
 
 
 Que 5: -
